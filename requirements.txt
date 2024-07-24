@@ -4,5 +4,5 @@ flask
 opencv-python
 requests
 Pillow
-numpy
 scikit-learn
+numpy
