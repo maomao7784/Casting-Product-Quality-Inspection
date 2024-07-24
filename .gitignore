@@ -1,0 +1,3 @@
+# Ignore data and src directories
+data/
+src/
