@@ -6,3 +6,6 @@ requests
 Pillow
 scikit-learn
 numpy
+notebook
+matplotlib
+scikit-image
