@@ -53,7 +53,8 @@ class block(nn.Module):
         x = self.relu(x)
         return x
     
-class ResNet(nn.Module): # [3, 4, 6, 3]
+class ResNet(nn.Module): 
+    # number of layer in each block for ResNet50: [3, 4, 6, 3]
     def __init__(self, block, layers, image_channels, num_classes):
         super(ResNet,self).__init__()
         self.in_channels = 64
