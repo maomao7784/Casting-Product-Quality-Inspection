@@ -21,9 +21,9 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 config = {
     'seed': 111111,
     'BATCH_SIZE': 32,
-    'save_name': "ResNet50_8_9",
-    #'model': CNN,
-    'model': ResNet(block, [3, 4, 6, 3], 1, 2)
+    'save_name': "cnn_8_9",
+    'model': CNN()
+    #'model': ResNet(block, [3, 4, 6, 3], 1, 2)
 }
 
 # load data
@@ -35,10 +35,9 @@ test_dataset = CastingDataset(test_def_images_path, test_ok_images_path)
 
 test_loader = DataLoader(dataset=test_dataset, 
                                batch_size=config['BATCH_SIZE'],
-                               shuffle=True,
+                               shuffle=False,
                                num_workers=0)
 test_target = test_dataset.labels
-
 
 model = config['model'].to(device)
 
