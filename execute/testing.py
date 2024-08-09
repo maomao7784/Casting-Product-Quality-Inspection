@@ -22,7 +22,7 @@ config = {
     'seed': 111111,
     'BATCH_SIZE': 32,
     'save_name': "cnn_8_9",
-    'model': CNN
+    'model': CNN()
     #'model': ResNet(block, [3, 4, 6, 3], 1, 2)
 }
 
