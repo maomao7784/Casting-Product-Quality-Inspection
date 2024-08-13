@@ -20,8 +20,9 @@ class CastingDataset(Dataset):
         images = []
         labels = []
         for file, label in self.files:
-            im = Image.open(file).convert("L")
-            im = np.array(im)/255.0
+            im = Image.open(file).convert("L")  # read the img as grayscale 
+            im = im.resize((224, 224))  # Resize the image to 224x224
+            im = np.array(im)/255.0  # Normalize the image to [0, 1] range
             images.append(im)
             labels.append(label)
 
