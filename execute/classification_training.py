@@ -25,10 +25,12 @@ config = {
     'EPOCH': 10,
     'BATCH_SIZE': 32,
     'LR': 0.0001,
-    'save_name': "CNN_8_14",
-    'model': CNN()
+    #'save_name': "CNN_8_14",
+    #'model': CNN()
     #'save_name': "ResNet50_8_14",
     #'model': ResNet(block, [3, 4, 6, 3], 1, 2)
+    'save_name': "ResNet101_8_14",
+    'model': ResNet(block, [3, 4, 23, 3], 1, 2)
 }
 
 # load data
