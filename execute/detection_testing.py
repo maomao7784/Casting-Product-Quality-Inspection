@@ -40,7 +40,7 @@ config = {
     #'model': CAE()
     #'save_name': "VAE_8_13",
     #'model': VAE()
-    'save_name': "ATT_CAE_8_13",
+    'save_name': "ATT_CAE_8_14",
     'model': AttentionAutoencoder()
 }
 

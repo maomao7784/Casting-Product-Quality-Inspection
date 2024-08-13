@@ -21,10 +21,10 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 config = {
     'seed': 111111,
     'BATCH_SIZE': 32,
-    #'save_name': "CNN_8_13",
-    #'model': CNN()
-    'save_name': "ResNet50_8_13_1",
-    'model': ResNet(block, [3, 4, 6, 3], 1, 2)
+    'save_name': "CNN_8_14",
+    'model': CNN()
+    #'save_name': "ResNet50_8_14",
+    #'model': ResNet(block, [3, 4, 6, 3], 1, 2)
 }
 
 # load data

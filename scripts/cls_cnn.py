@@ -29,9 +29,9 @@ class CNN(nn.Module):
             nn.Linear(32, 2)
         )
 
-    def forward(self, x):
-        x = self.conv1(x)
-        x = self.conv2(x)   # (batch, 32,56,56)
+    def forward(self, x):         # (batch, 16,224,224)
+        x = self.conv1(x)         # (batch, 16,112,112)
+        x = self.conv2(x)         # (batch, 32,56,56)
         x = x.view(x.size(0), -1) # (batch, 32*56*56)
         output = self.fc(x)
         return output
